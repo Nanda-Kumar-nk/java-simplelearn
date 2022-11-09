@@ -1,0 +1,69 @@
+{
+    "d": {
+        "__metadata": {
+            "id": "http://cigwd10.ssn.intra.lighting.com:8010/sap/opu/odata/sap/ZGW_MYLIGHTING_API_SRV/SOHDRSet(Doc_Type='ZE01',SalesOrg='US01',DistrChan='02',Division='01')",
+            "uri": "http://cigwd10.ssn.intra.lighting.com:8010/sap/opu/odata/sap/ZGW_MYLIGHTING_API_SRV/SOHDRSet(Doc_Type='ZE01',SalesOrg='US01',DistrChan='02',Division='01')",
+            "type": "ZGW_MYLIGHTING_API_SRV.SOHDR"
+        },
+        "Doc_Type": "ZE01",
+        "SalesOrg": "US01",
+        "DistrChan": "02",
+        "Division": "01",
+        "ReqDateH": "20220428",
+        "OrderToItems": {
+            "results": [
+                {
+                    "__metadata": {
+                        "id": "http://cigwd10.ssn.intra.lighting.com:8010/sap/opu/odata/sap/ZGW_MYLIGHTING_API_SRV/SOITEMSet('000010')",
+                        "uri": "http://cigwd10.ssn.intra.lighting.com:8010/sap/opu/odata/sap/ZGW_MYLIGHTING_API_SRV/SOITEMSet('000010')",
+                        "type": "ZGW_MYLIGHTING_API_SRV.SOITEM"
+                    },
+                    "ItmNumber": "000010",
+                    "Material": "000910503702809",
+                    "Plant": "US01",
+                    "TargetQty": "0000000001000",
+                    "ReqQty": "0000000001000",
+                    "ReqDate": "20220428"
+                },
+                {
+                    "__metadata": {
+                        "id": "http://cigwd10.ssn.intra.lighting.com:8010/sap/opu/odata/sap/ZGW_MYLIGHTING_API_SRV/SOITEMSet('000020')",
+                        "uri": "http://cigwd10.ssn.intra.lighting.com:8010/sap/opu/odata/sap/ZGW_MYLIGHTING_API_SRV/SOITEMSet('000020')",
+                        "type": "ZGW_MYLIGHTING_API_SRV.SOITEM"
+                    },
+                    "ItmNumber": "000020",
+                    "Material": "000910503700046",
+                    "Plant": "US01",
+                    "TargetQty": "0000000002000",
+                    "ReqQty": "0000000002000",
+                    "ReqDate": "20220428"
+                }
+            ]
+        },
+        "OrderToPartners": {
+            "results": [
+                {
+                    "__metadata": {
+                        "id": "http://cigwd10.ssn.intra.lighting.com:8010/sap/opu/odata/sap/ZGW_MYLIGHTING_API_SRV/SOPARTNERSSet(PartnRole='SP',PartnNumb='10004446')",
+                        "uri": "http://cigwd10.ssn.intra.lighting.com:8010/sap/opu/odata/sap/ZGW_MYLIGHTING_API_SRV/SOPARTNERSSet(PartnRole='SP',PartnNumb='10004446')",
+                        "type": "ZGW_MYLIGHTING_API_SRV.SOPARTNERS"
+                    },
+                    "PartnRole": "SP",
+                    "PartnNumb": "10004446"
+                },
+                {
+                    "__metadata": {
+                        "id": "http://cigwd10.ssn.intra.lighting.com:8010/sap/opu/odata/sap/ZGW_MYLIGHTING_API_SRV/SOPARTNERSSet(PartnRole='SH',PartnNumb='10004446')",
+                        "uri": "http://cigwd10.ssn.intra.lighting.com:8010/sap/opu/odata/sap/ZGW_MYLIGHTING_API_SRV/SOPARTNERSSet(PartnRole='SH',PartnNumb='10004446')",
+                        "type": "ZGW_MYLIGHTING_API_SRV.SOPARTNERS"
+                    },
+                    "PartnRole": "SH",
+                    "PartnNumb": "10004446"
+                }
+            ]
+        },
+        "OrderToSchline": {
+            "results": []
+        }
+    }
+}

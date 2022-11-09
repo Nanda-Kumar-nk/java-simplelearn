@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<atom:entry xmlns:atom="http://www.w3.org/2005/Atom" xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices" xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata">
+
+    <atom:content type="application/xml">
+
+        <m:properties>
+
+            <d:Doc_Type>ZE01</d:Doc_Type>
+
+            <d:SalesOrg>US01</d:SalesOrg>
+
+            <d:DistrChan>02</d:DistrChan>
+
+            <d:Division>01</d:Division>
+
+            <d:ReqDateH>20220428</d:ReqDateH>
+
+        </m:properties>
+
+    </atom:content>
+
+    <atom:link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/OrderToItems" title="ZGW_MYLIGHTING_API_SRV.SOHDR_ITEM" type="application/atom+xml;type=feed">
+
+        <m:inline>
+
+            <atom:feed>
+
+                <atom:entry>
+
+                    <atom:content type="application/xml">
+
+                        <m:properties>
+
+                            <d:ItmNumber>10</d:ItmNumber>
+
+                            <d:Material>910503702809</d:Material>
+
+                            <d:Plant>US01</d:Plant>
+
+                            <d:TargetQty>1000</d:TargetQty>
+
+                            <d:ReqQty>1000</d:ReqQty>
+
+                            <d:ReqDate>20220428</d:ReqDate>
+
+                        </m:properties>
+
+                    </atom:content>
+
+                </atom:entry>
+
+                <atom:entry>
+
+                    <atom:content type="application/xml">
+
+                        <m:properties>
+
+                            <d:ItmNumber>20</d:ItmNumber>
+
+                            <d:Material>910503700046</d:Material>
+
+                            <d:Plant>US01</d:Plant>
+
+                            <d:TargetQty>2000</d:TargetQty>
+
+                            <d:ReqQty>2000</d:ReqQty>
+
+                            <d:ReqDate>20220428</d:ReqDate>
+
+                        </m:properties>
+
+                    </atom:content>
+
+                </atom:entry>
+
+            </atom:feed>
+
+        </m:inline>
+
+    </atom:link>
+
+    <atom:link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/OrderToPartners" title="ZGW_MYLIGHTING_API_SRV.SOHDR_PARTNER" type="application/atom+xml;type=feed">
+
+        <m:inline>
+
+            <atom:feed>
+
+                <atom:entry>
+
+                    <atom:content type="application/xml">
+
+                        <m:properties>
+
+                            <d:PartnRole>AG</d:PartnRole>
+
+                            <d:PartnNumb>0010004446</d:PartnNumb>
+
+                        </m:properties>
+
+                    </atom:content>
+
+                </atom:entry>
+
+                <atom:entry>
+
+                    <atom:content type="application/xml">
+
+                        <m:properties>
+
+                            <d:PartnRole>WE</d:PartnRole>
+
+                            <d:PartnNumb>0010004446</d:PartnNumb>
+
+                        </m:properties>
+
+                    </atom:content>
+
+                </atom:entry>
+
+            </atom:feed>
+
+        </m:inline>
+
+    </atom:link>
+
+    <atom:link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/OrderToSchline" title="ZGW_MYLIGHTING_API_SRV. SOHDR_SCHLINES" type="application/atom+xml;type=feed">
+
+        <m:inline>
+
+            <atom:feed>
+
+                <atom:entry>
+
+                    <atom:content type="application/xml">
+
+                        <m:properties>
+
+                            <d:ItmNumber>10</d:ItmNumber>
+
+                            <d:SchedLine>10</d:SchedLine>
+
+                        </m:properties>
+
+                    </atom:content>
+
+                </atom:entry>
+
+                <atom:entry>
+
+                    <atom:content type="application/xml">
+
+                        <m:properties>
+
+                            <d:ItmNumber>20</d:ItmNumber>
+
+                            <d:SchedLine>10</d:SchedLine>
+
+                        </m:properties>
+
+                    </atom:content>
+
+                </atom:entry>
+
+            </atom:feed>
+
+        </m:inline>
+
+    </atom:link>
+
+</atom:entry>

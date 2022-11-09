@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <customerId>0010016903</customerId>
+    <country>US</country>
+    <city>Atlanta</city>
+    <biddate>2021-01-01</biddate>
+    <currency>USD</currency>
+    <externalquoteno>20-0991</externalquoteno>
+    <products>
+        <element>
+            <code>000000912401282863</code>
+            <description>FSW880L835-UNV-DIM</description>
+            <quantity>50</quantity>
+            <requestedPrice>145.8</requestedPrice>
+            <type>A</type>
+        </element>
+        <element>
+            <code>000000912401462496</code>
+            <description>FSI440L830-UNV-DIM</description>
+            <quantity>75</quantity>
+            <requestedPrice>74.7</requestedPrice>
+            <type>B</type>
+        </element>
+        <element>
+            <code>000000912401493374</code>
+            <description>FSI840L840-UNV-DIM</description>
+            <quantity>80</quantity>
+            <requestedPrice>140.4</requestedPrice>
+            <type>C</type>
+        </element>
+        <element>
+            <code>000000912300009304</code>
+            <description>2CAXG43L830-4-DS-UNV-DIM</description>
+            <quantity>70</quantity>
+            <requestedPrice>0.0</requestedPrice>
+            <type>D</type>
+        </element>
+        <element>
+            <code>000000912400348807</code>
+            <description>VERWEM</description>
+            <quantity>45</quantity>
+            <requestedPrice>18.5</requestedPrice>
+            <type>E</type>
+        </element>
+        <element>
+            <code>000000912400371075</code>
+            <description>ER55L3WR</description>
+            <quantity>30</quantity>
+            <requestedPrice>115.0</requestedPrice>
+            <type>F</type>
+        </element>
+        <element>
+            <code>000000912401460190</code>
+            <description>2TG30L840-2-FA-12F-UNV-DIM</description>
+            <quantity>60</quantity>
+            <requestedPrice>106.7</requestedPrice>
+            <type>G</type>
+        </element>
+    </products>
+    <projectName>TEST QUOTE Nanda</projectName>
+    <quoter>nanda.kumar.kg@signify.com</quoter>
+    <quotername>Nanda Kumar</quotername>
+    <region>US-GA</region>
+</root>

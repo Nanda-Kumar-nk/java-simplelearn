@@ -1,0 +1,240 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	elementFormDefault="qualified">
+	<xs:element name="root">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="revisionOf" minOccurs="0" maxOccurs="1"/>
+				<xs:element ref="projectName" minOccurs="1" />
+				<xs:element ref="customerId" minOccurs="0" maxOccurs="1"/>
+				<xs:element ref="country" minOccurs="1" />
+				<xs:element ref="city" minOccurs="1" />
+				<xs:element ref="region" minOccurs="1" />
+				<xs:element ref="quoter" minOccurs="1" />
+				<xs:element ref="quotername" minOccurs="0" maxOccurs="1" />
+				<xs:element ref="externalquoteno" minOccurs="0"
+					maxOccurs="1" />
+				<xs:element ref="currency" minOccurs="1" />
+				<xs:element ref="biddate" minOccurs="0" maxOccurs="1" />
+				<xs:element ref="headertext" minOccurs="0" maxOccurs="1"/>
+				<xs:element ref="products" minOccurs="1" maxOccurs="200" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="revisionOf">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:length value="36"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="projectName">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:minLength value="1" />
+				<xs:maxLength value="100" />
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="customerId">
+		<xs:simpleType>
+		    	<xs:restriction base="xs:string">
+				<xs:minLength value="8" />
+				<xs:maxLength value="21" />
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="country">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:length value="2" />
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="city">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:minLength value="1" />
+				<xs:maxLength value="100" />
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="region">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:enumeration value="US-AK" />
+				<xs:enumeration value="US-AL" />
+				<xs:enumeration value="US-AR" />
+				<xs:enumeration value="US-AS" />
+				<xs:enumeration value="US-AZ" />
+				<xs:enumeration value="US-CA" />
+				<xs:enumeration value="US-CO" />
+				<xs:enumeration value="US-CT" />
+				<xs:enumeration value="US-DC" />
+				<xs:enumeration value="US-DE" />
+				<xs:enumeration value="US-FL" />
+				<xs:enumeration value="US-GA" />
+				<xs:enumeration value="US-GU" />
+				<xs:enumeration value="US-HI" />
+				<xs:enumeration value="US-IA" />
+				<xs:enumeration value="US-ID" />
+				<xs:enumeration value="US-IL" />
+				<xs:enumeration value="US-IN" />
+				<xs:enumeration value="US-KS" />
+				<xs:enumeration value="US-KY" />
+				<xs:enumeration value="US-LA" />
+				<xs:enumeration value="US-MA" />
+				<xs:enumeration value="US-MD" />
+				<xs:enumeration value="US-ME" />
+				<xs:enumeration value="US-MI" />
+				<xs:enumeration value="US-MN" />
+				<xs:enumeration value="US-MO" />
+				<xs:enumeration value="US-MP" />
+				<xs:enumeration value="US-MS" />
+				<xs:enumeration value="US-MT" />
+				<xs:enumeration value="US-NC" />
+				<xs:enumeration value="US-ND" />
+				<xs:enumeration value="US-NE" />
+				<xs:enumeration value="US-NH" />
+				<xs:enumeration value="US-NJ" />
+				<xs:enumeration value="US-NM" />
+				<xs:enumeration value="US-NV" />
+				<xs:enumeration value="US-NY" />
+				<xs:enumeration value="US-OH" />
+				<xs:enumeration value="US-OK" />
+				<xs:enumeration value="US-OR" />
+				<xs:enumeration value="US-PA" />
+				<xs:enumeration value="US-PR" />
+				<xs:enumeration value="US-RI" />
+				<xs:enumeration value="US-SC" />
+				<xs:enumeration value="US-SD" />
+				<xs:enumeration value="US-TN" />
+				<xs:enumeration value="US-TX" />
+				<xs:enumeration value="US-UM" />
+				<xs:enumeration value="US-UT" />
+				<xs:enumeration value="US-VA" />
+				<xs:enumeration value="US-VI" />
+				<xs:enumeration value="US-VT" />
+				<xs:enumeration value="US-WA" />
+				<xs:enumeration value="US-WI" />
+				<xs:enumeration value="US-WV" />
+				<xs:enumeration value="US-WY" />
+				<xs:enumeration value="CA-BC" />
+                <xs:enumeration value="CA-MB" />
+                <xs:enumeration value="CA-NB" />
+                <xs:enumeration value="CA-NS" />
+                <xs:enumeration value="CA-ON" />
+                <xs:enumeration value="CA-QC" />
+                <xs:enumeration value="CA-SK" />
+                <xs:enumeration value="CA-YT" />
+                <xs:enumeration value="CA-AB" />
+                <xs:enumeration value="CA-PE" />
+                <xs:enumeration value="CA-NU" />
+                <xs:enumeration value="CA-NL" />
+                <xs:enumeration value="CA-NT" />
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="currency">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:minLength value="3" />
+				<xs:maxLength value="3" />
+				<xs:pattern value="[A-Z]{3}" />
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="quoter">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:pattern value="[^@]+@[^\.]+\..+" />
+				<xs:minLength value="1" />
+				<xs:maxLength value="100" />
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="quotername">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:minLength value="1" />
+				<xs:maxLength value="200" />
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="externalquoteno">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:maxLength value="18" />
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="biddate">
+		<xs:simpleType>
+			<xs:restriction base="xs:date" />
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="headertext">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:minLength value="1" />
+				<xs:maxLength value="5000" />
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	
+	<xs:element name="products">
+		<xs:complexType>
+			<xs:all>
+				<xs:element ref="code" minOccurs="1" />
+				<xs:element ref="quantity" minOccurs="1" />
+				<xs:element ref="requestedPrice" />
+				<xs:element ref="type" minOccurs="1" />
+				<xs:element ref="description" minOccurs="0" />
+				<xs:element ref="linetext" minOccurs="0" />
+				<xs:element ref="configurationId" minOccurs="0"/> 
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="code">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:minLength value="1" />
+				<xs:maxLength value="18" />
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="type">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:minLength value="1" />
+				<xs:maxLength value="50" />
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="description">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:minLength value="1" />
+				<xs:maxLength value="250" />
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="quantity" type="xs:integer" />
+	<xs:element name="requestedPrice" type="xs:decimal" />
+	<xs:element name="linetext">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:minLength value="1" />
+				<xs:maxLength value="5000" />
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="configurationId">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:minLength value="34" />
+				<xs:maxLength value="38" />
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+</xs:schema>
